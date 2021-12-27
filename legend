@@ -1,0 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv(r'./battles.csv')
+plt.plot(df['year'], df['major_death'], label = 'Major death')
+plt.plot(df['year'], df['major_capture'], label = 'Major capture')
+plt.legend() 
+plt.show()
