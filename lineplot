@@ -1,0 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt 
+df = pd.read_csv(r'./battles.csv')
+print(df)
+print("df Statistics: ", df.describe())
+
+df.plot(x='year', y='major_capture')
+df.plot(x='year', y='major_death')
+plt.show()
