@@ -1,0 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = pd.read_csv(r'district wise rainfall normal.csv')
+print(data)
+
+sns.jointplot("DISTRICT","Jun-Sep",data=data)
+plt.show()
